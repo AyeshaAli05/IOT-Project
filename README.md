@@ -17,4 +17,4 @@ Possible Components:
 •	Electric Lock
 •	Hex Keypad
 •	LCD Display 
-For online we will use NetPie Website, but online server Google Firebase free version can be used which can be linked to Mobile app if needed.
+For online we will use NetPie Website, but online server Google Firebase free version can be used which can be linked to Mobile app if needed
