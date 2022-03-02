@@ -4,36 +4,36 @@ Smart Letter Box
 
 Smart Letter box is a parcel box by some parcel company to ship parcels of users. It can either be a letter box placed in front of the house or a letter box used by some company to ship goods. The idea is to provide live tracking and security features along with connecting box with user’s app as well as company’s main server. One can check the location of all boxes, weight of parcel placed in them, and each box will have security feature in terms of unique password linked to its unique ID. The main functionality as well as components required are listed below:
 
-Functionality:
+**Functionality:**
 
-•	Internet Connectivity (WiFi / GSM)
+-	Internet Connectivity (WiFi / GSM)
 
-•	GPS Location
+-	GPS Location
 
-•	Weight of parcel
+-	Weight of parcel
 
-•	Battery Powered
+-	Battery Powered
 
-•	Electric Lock (Password Protected)
+-	Electric Lock (Password Protected)
 
-•	Keypad and Display
+-	Keypad and Display
 
-•	LED Lights inside
+-	LED Lights inside
 
-Possible Components:
+**Possible Components:**
 
-•	ESP32
+-	ESP32
 
-•	GSM module
+-	GSM module
 
-•	GPS module
+-	GPS module
 
-•	Load Cell (For Weight)
+-	Load Cell (For Weight)
 
-•	Electric Lock
+-	Electric Lock
 
-•	Hex Keypad
+-	Hex Keypad
 
-•	LCD Display 
+-	LCD Display 
 
-For online we will use NetPie Website, but online server Google Firebase free version can be used which can be linked to Mobile app if needed
+*For online we will use NetPie Website, but online server Google Firebase free version can be used which can be linked to Mobile app if needed
