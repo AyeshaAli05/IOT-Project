@@ -20,6 +20,8 @@ The key features of the project includes:
 
 - Mobile app for control 
 
+NETPIE will be used as a cloud server as well as for mobile app GUI.
+
 **Hardware:**
 
 The main hardware components used in project are
@@ -38,4 +40,12 @@ The main hardware components used in project are
  
 - Weight: Half Bridge Load HX711 
  
-NETPIE will be used as a cloud server as well as for mobile app GUI.
+**Software Flow: ** 
+
+The software flow of the Project is shown following:
+
+![image](https://user-images.githubusercontent.com/100766772/158037452-c0b73991-f753-41b2-a9bb-ce44fb2fcbc1.png)
+
+While the software flow at the receiver side is as follow:
+
+![image](https://user-images.githubusercontent.com/100766772/158037469-38d2c5ee-45d2-4faf-9ffe-83ae5e7f9b55.png)
