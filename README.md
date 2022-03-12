@@ -12,7 +12,7 @@ The Conceptual DEsign of the project is shown in the figure below:
 
 The conceptual design based on the available components is as follow:
 
-![image](https://user-images.githubusercontent.com/100766772/158037626-0e9460e4-7113-4d25-ba67-881f3688a7e4.png)
+![image](https://user-images.githubusercontent.com/100766772/158037634-5eda56de-da57-4891-90a1-5c8977086eca.png)
 
 **Features:**
 
