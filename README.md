@@ -11,21 +11,15 @@ Smart Letter box is a parcel box by some parcel company to ship parcels of users
 
 ![image](https://user-images.githubusercontent.com/100766772/158037050-59107cc0-7013-4c59-bdfd-5310b4449445.png)
 
-**Functionality:**
+**Features:**
 
--	Internet Connectivity (WiFi / GSM)
+The key features of the project includes:
 
--	GPS Location
+- Real time location tracking through internet connectivity.
 
--	Weight of parcel
+- Password protected lock system implementation.
 
--	Battery Powered
-
--	Electric Lock (Password Protected)
-
--	Keypad and Display
-
--	LED Lights inside
+- Mobile app for control 
 
 **Possible Components:**
 
