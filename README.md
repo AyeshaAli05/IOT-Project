@@ -38,7 +38,4 @@ The main hardware components used in project are
  
 - Weight: Half Bridge Load HX711 
  
-![image](https://user-images.githubusercontent.com/100766772/158037277-5f593c03-8b6d-4e73-8008-ed9cddc7b4e6.png)
- 
-
 NETPIE will be used as a cloud server as well as for mobile app GUI.
