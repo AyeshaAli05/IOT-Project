@@ -44,8 +44,9 @@ The main hardware components used in project are
 
 The software flow of the Project is shown following:
 
-![image](https://user-images.githubusercontent.com/100766772/158037452-c0b73991-f753-41b2-a9bb-ce44fb2fcbc1.png)
+![image](https://user-images.githubusercontent.com/100766772/158037506-70935154-fb8e-4f35-b959-eacff436c228.png)
 
 While the software flow at the receiver side is as follow:
 
-![image](https://user-images.githubusercontent.com/100766772/158037469-38d2c5ee-45d2-4faf-9ffe-83ae5e7f9b55.png)
+![image](https://user-images.githubusercontent.com/100766772/158037499-22ecbea6-0944-476c-a9de-cacb94370f69.png)
+
