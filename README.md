@@ -31,7 +31,7 @@ The main hardware components used in project are
 - Connectivity: ESP32 built-in Wi-Fi & GSM Module SIM800L
  
 - Display: 16*2 LCD
-- 
+
 - Keypad: Hex Keypad 
  
 - Electric Lock: Servo Motor 
