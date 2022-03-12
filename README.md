@@ -7,6 +7,9 @@
 
 Smart Letter box is a parcel box by some parcel company to ship parcels of users. It can either be a letter box placed in front of the house or a letter box used by some company to ship goods. The idea is to provide live tracking and security features along with connecting box with user’s app as well as company’s main server. One can check the location of all boxes, weight of parcel placed in them, and each box will have security feature in terms of unique password linked to its unique ID. The main functionality as well as components required are listed below:
 
+**Conceptual Design**
+![image](https://user-images.githubusercontent.com/100766772/158037050-59107cc0-7013-4c59-bdfd-5310b4449445.png)
+
 **Functionality:**
 
 -	Internet Connectivity (WiFi / GSM)
