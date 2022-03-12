@@ -1,13 +1,12 @@
 # IOT-Project
 
-![image](https://user-images.githubusercontent.com/100766772/158036993-6e6f1aa5-3b91-4256-8b63-1146255c463d.png)
-
-
 **Smart Letter Box** 
 
 Smart Letter box is a parcel box by some parcel company to ship parcels of users. It can either be a letter box placed in front of the house or a letter box used by some company to ship goods. The idea is to provide live tracking and security features along with connecting box with user’s app as well as company’s main server. One can check the location of all boxes, weight of parcel placed in them, and each box will have security feature in terms of unique password linked to its unique ID. The main functionality as well as components required are listed below:
 
 **Conceptual Design:**
+
+The Conceptual DEsign of the project is shown in the figure below:
 
 ![image](https://user-images.githubusercontent.com/100766772/158037050-59107cc0-7013-4c59-bdfd-5310b4449445.png)
 
@@ -21,20 +20,25 @@ The key features of the project includes:
 
 - Mobile app for control 
 
-**Possible Components:**
+**Hardware:**
 
--	ESP32
+The main hardware components used in project are
 
--	GSM module
-
--	GPS module
-
--	Load Cell (For Weight)
-
--	Electric Lock
-
--	Hex Keypad
-
--	LCD Display 
+- MCU: ESP32 
+ 
+- Location (GPS): GPS Module NEO 6M 
+ 
+- Connectivity: ESP32 built-in Wi-Fi & GSM Module SIM800L
+ 
+- Display: 16*2 LCD
+- 
+- Keypad: Hex Keypad 
+ 
+- Electric Lock: Servo Motor 
+ 
+- Weight: Half Bridge Load HX711 
+ 
+![image](https://user-images.githubusercontent.com/100766772/158037277-5f593c03-8b6d-4e73-8008-ed9cddc7b4e6.png)
+ 
 
 NETPIE will be used as a cloud server as well as for mobile app GUI.
