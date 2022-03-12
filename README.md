@@ -8,7 +8,7 @@ Smart Letter box is a parcel box by some parcel company to ship parcels of users
 
 The Conceptual DEsign of the project is shown in the figure below:
 
-![image](https://user-images.githubusercontent.com/100766772/158037539-0aed3a04-3824-42f1-a4da-ba4382978472.png)
+![image](https://user-images.githubusercontent.com/100766772/158037560-96014433-83dc-48c6-b398-9446f60d45cd.png)
 
 **Features:**
 
