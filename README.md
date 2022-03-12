@@ -10,6 +10,10 @@ The Conceptual DEsign of the project is shown in the figure below:
 
 ![image](https://user-images.githubusercontent.com/100766772/158037560-96014433-83dc-48c6-b398-9446f60d45cd.png)
 
+The conceptual design based on the available components is as follow:
+
+![image](https://user-images.githubusercontent.com/100766772/158037603-71d9a9f8-69d6-49b5-8765-6ffcbd45234f.png)
+
 **Features:**
 
 The key features of the project includes:
@@ -40,7 +44,7 @@ The main hardware components used in project are
  
 - Weight: Half Bridge Load HX711 
  
-**Software Flow: ** 
+**Software Flow:**
 
 The software flow of the Project is shown following:
 
