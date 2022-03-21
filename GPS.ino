@@ -1,6 +1,5 @@
 
-
-// Interfacing Arduino with NEO-6M GPS module
+e
 
 #include <TinyGPS++.h>           // Include TinyGPS++ library
 //#include <SoftwareSerial.h>      // Include software serial library
