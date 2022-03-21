@@ -1,4 +1,5 @@
-n this week we ried following thongs:
+this week we have tried following things:
 We tried NETPIE connection with arduino
-GPS connection with omega.... its limit is more but not successfull in connection yet
+GPS connection with omega.... its limit is more than ESP86 but not successfull in connection yet
 Basic servo control for lock system
+Keypad Password Implementation done
