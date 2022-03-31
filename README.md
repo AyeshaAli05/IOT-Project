@@ -85,7 +85,8 @@ While the software flow at the receiver side is as follow:
 
 ## Timeline of Project ##
 
-![Capture](https://user-images.githubusercontent.com/76215573/161126190-c3a1eae7-1f7e-4066-ad62-5c64d6290205.JPG)
+![Capture22](https://user-images.githubusercontent.com/76215573/161130336-5ec5b7e0-420c-4949-af2d-657fee118388.JPG)
+
 
 ## Weekly Progress ##
 
