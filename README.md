@@ -142,4 +142,4 @@ While the software flow at the receiver side is as follow:
 
 **Problems**
 
-- The value gained through GPS module have the tolerance of 100 ans we though of using capacitor to reduce noise.
+- The value gained through GPS module have the tolerance of 100 ans we though of using capacitor to reduce noise
