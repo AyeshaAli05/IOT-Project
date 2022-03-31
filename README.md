@@ -60,25 +60,25 @@ While the software flow at the receiver side is as follow:
 
 ### Week 1 ###
 
-**Task**
+**Tasks**
 
 **Problems**
 
 ### Week 2 ###
 
-**Task**
+**Tasks**
 
 **Problems**
 
 ### Week 3 ###
 
-**Task**
+**Tasks**
 
 **Problems**
 
 ### Week 4 ###
 
-**Task**
+**Tasks**
 
 **Problems**
 
