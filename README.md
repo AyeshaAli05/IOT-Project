@@ -112,7 +112,3 @@ While the software flow at the receiver side is as follow:
 **Tasks**
 
 **Problems**
-
-
-
-
