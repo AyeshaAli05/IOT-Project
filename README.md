@@ -92,54 +92,54 @@ While the software flow at the receiver side is as follow:
 
 **Tasks**
 
-Configuration and Testing of ESP82
+- Configuration and Testing of ESP82
 
-Configuration and Testing of 16*2 LCD display
+- Configuration and Testing of 16*2 LCD display
 
-Configuration and Testing of Hex Keypad
+- Configuration and Testing of Hex Keypad
 
 **Problems**
 
-No big issue was faced
+- No big issue was faced
 
 ### Week 2 ###
 
 **Tasks**
 
-Get familiar with the basics of Iot
+- Get familiar with the basics of Iot
 
-IoT labs Implementation
+- IoT labs Implementation
 
-Tried GPS connection with ESP32 
+- Tried GPS connection with ESP32 
 
 **Problems**
 
-We were not able to connect GPS module with ESP32 due to less current limit of ESP32
+- We were not able to connect GPS module with ESP32 due to less current limit of ESP32 than what was required for for operation of GPS module
 
 ### Week 3 ###
 
 **Tasks**
 
-NETPIE Connection with arduino
+- NETPIE Connection with arduino
 
-GPS connection with omega (not succesfull)
+- GPS connection with omega (not succesfull)
 
-Basic Servo control for lock System
+- Basic Servo control for lock System
 
-Keypad Password Implementation
+- Keypad Password Implementation
 
 **Problems**
 
-Tried GPS connectio with omega as it provides more current limit than ESP32 but we were unsuccessfull in its connection too and we figure out to use voltage regulator with GPS module 
+- Tried GPS connectio with omega as it provides more current limit than ESP32 but we were unsuccessfull in its connection too and we figure out to use voltage    regulator with GPS module 
 
 ### Week 4 ###
 
 **Tasks**
 
-NETPIE connection with ESP32
+- NETPIE connection with ESP32
 
-Tried GPS connection with ESP32 along with voltage regulator 
+- Tried GPS connection with ESP32 along with voltage regulator 
 
 **Problems**
 
-The value gained through GPS module have the tolerance of 100 ans we though of using capacitor to reduce noise.
+- The value gained through GPS module have the tolerance of 100 ans we though of using capacitor to reduce noise.
