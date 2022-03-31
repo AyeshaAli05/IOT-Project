@@ -52,8 +52,6 @@ While the software flow at the receiver side is as follow:
 
 ![image](https://user-images.githubusercontent.com/100766772/158037520-d6427623-2e90-489e-9fc5-155297fd33e1.png)
 
-![image](https://user-images.githubusercontent.com/76215573/161125659-017c62ef-82f3-42c6-8773-1cd7be89d360.png)
-
 ## Task Distribution ##
 
 **Ayesha Ali (real time tracking)**
