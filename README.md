@@ -57,20 +57,20 @@ While the software flow at the receiver side is as follow:
 ## Task Distribution ##
 
 **Ayesha Ali (real time tracking)**
-- Real time location tracking through GPS {SW A1.1} 
-- Real time location tracking through GSM  {SW A1.2}
-- Hardware Configuration: ESP32, SIM800L and LCD 16*2 {HW A1.1}
+Real time location tracking through GPS {SW A1.1} 
+Real time location tracking through GSM  {SW A1.2}
+Hardware Configuration: ESP32, SIM800L and LCD 16*2 {HW A1.1}
 
-**Usama Azhar**
-- Controlling Lock system through server NETPIE {SW B1.1}
-- Display of information on box {SW B1.2}
-- Hardware Configuration: ESP32 & GPS Module NEO 6M {HW B1.1}
+**Usama Azhar** 
+Controlling Lock system through server NETPIE {SW B1.1}
+Display of information on box {SW B1.2}
+Hardware Configuration: ESP32 & GPS Module NEO 6M {HW B1.1}
 
 **Abdul Wahab (lock system)**
-- Electric lock operated using MCU controlled switches, and keypad  {SW C1.1}
-- Max number of wrong attempts detection and disable unlock. {SW C1.2}
-- Update Server and app notifications and warnings {SW C1.3}
-- Hardware Configuration: ESP32, Hex Keypad & Half Bridge Load Cell HX711 {HW C1.1}
+Electric lock operated using MCU controlled switches, and keypad  {SW C1.1}
+Max number of wrong attempts detection and disable unlock. {SW C1.2}
+Update Server and app notifications and warnings {SW C1.3}
+Hardware Configuration: ESP32, Hex Keypad & Half Bridge Load Cell HX711 {HW C1.1}
 
 
 ## Timeline of Project ##
