@@ -122,7 +122,7 @@ While the software flow at the receiver side is as follow:
 
 - NETPIE Connection with arduino
 
-- GPS connection with omega (not succesfull)
+- GPS connection with mega (not succesfull)
 
 - Basic Servo control for lock System
 
@@ -130,7 +130,7 @@ While the software flow at the receiver side is as follow:
 
 **Problems**
 
-- Tried GPS connectio with omega as it provides more current limit than ESP32 but we were unsuccessfull in its connection too and we figure out to use voltage    regulator with GPS module 
+- Tried GPS connectio with mega as it provides more current limit than ESP32 but we were unsuccessfull in its connection too and we figure out to use voltage    regulator with GPS module 
 
 ### Week 4 ###
 
