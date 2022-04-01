@@ -40,7 +40,7 @@ The main hardware components used in project are
  
 - Electric Lock: Servo Motor 
  
-- Weight: Half Bridge Load HX711 
+- Weight: weight Sensor
  
 ## Software Flow: ##
 
@@ -58,9 +58,9 @@ While the software flow at the receiver side is as follow:
 
 - Real time location tracking through GPS {SW A1.1} 
 
-- Real time location tracking through GSM  {SW A1.2}
+- Backup Internet Connectivity  {SW A1.2}
 
-- Hardware Configuration: ESP32, SIM800L and LCD 16*2 {HW A1.1}
+- Hardware Configuration: ESP32, GPS {HW A1.1}
 
 **Usama Azhar** 
 
@@ -68,11 +68,13 @@ While the software flow at the receiver side is as follow:
 
 - Display of information on box {SW B1.2}
 
-- Hardware Configuration: ESP32 & GPS Module NEO 6M {HW B1.1}
+- Servo Control through mobile app {SW B1.3} 
+
+- Hardware Configuration: ESP32, 16*2 LCD & GPS Module NEO 6M {HW B1.1}
 
 **Abdul Wahab (lock system)**
 
-- Electric lock operated using MCU controlled switches, and keypad  {SW C1.1}
+- Electric lock operated using MCU controlled by keypad  {SW C1.1}
 
 - Max number of wrong attempts detection and disable unlock. {SW C1.2}
 
