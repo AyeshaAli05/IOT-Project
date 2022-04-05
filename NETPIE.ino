@@ -1,21 +1,24 @@
-#include "ESP8266WiFi.h"
 #include <MicroGear.h>
+#include "WiFi.h"
 
-const char* ssid = "PTCL-383"; //Enter SSID
-const char* password = "qwertyuiop123"; //Enter Password
+const char* ssid = "ThailandFang24_2G"; //Enter SSID
+const char* password = "0887688468"; //Enter Password
 
-  #define APPID   "IoTProject"              // use group AppID 
-  #define KEY     "yBz3cPmIZ8PoCKk"                // use group Key
-  #define SECRET  "zENetgpO6ijU6O7i0GLyIWUcb"             // use group Secret
-  #define ALIAS   "IoT"  // your device name, ex. "A01"
-  #define DHTDATATOPIC "/letterbox/IoT"         // topic 
+  #define APPID   "IoTSmartDeliveryBox"              // use group AppID 
+  #define KEY     "CC0IB4rbIMvbKe9"                // use group Key
+  #define SECRET  "1zhnZ9P8rHN3HXRWt3lBSI5eC"             // use group Secret
+  #define ALIAS   "IoTProject"  // your device name, ex. "A01"
+  #define DATATOPIC "/Lock/IoTProject"         // topic 
+  #define BUTTONTOPIC "/Button/IoTProject"         // topic 
+
+  #define LEDPIN     25  // LED on NodeMCU board 
 
    WiFiClient client;
      MicroGear microgear(client);
        int timer = 0;
-  int lastsend = 0;
-
-
+  int lastSend = 0;
+bool lock_status = 0;
+  int currentLEDState = 1;
 
 
 /* If a new message arrives, do this */
@@ -23,6 +26,9 @@ void onMsghandler(char *topic, uint8_t* msg, unsigned int msglen) {
     Serial.print("Incoming message --> ");
     msg[msglen] = '\0';
     Serial.println((char *)msg);
+    
+    if (*(char *)msg == '0') updateLED(0);
+    else if (*(char *)msg == '1') updateLED(1);
 }
 
 void onFoundgear(char *attribute, uint8_t* msg, unsigned int msglen) {
@@ -69,7 +75,6 @@ void setup(void)
 
     Serial.println("Starting..."); 
       // Connect to WiFi
-    Serial.println("Debug");
     if (WiFi.begin(ssid, password)) {
         while (WiFi.status() != WL_CONNECTED) {
             delay(500);
@@ -90,13 +95,14 @@ void setup(void)
 
 void loop() 
 {
+  
  /* To check if the microgear is still connected */
     if (microgear.connected()) {
         Serial.println("connected");
 
         /* Call this method regularly otherwise the connection may be lost */
         microgear.loop();
-        ReadandSend();
+     
     }
         else {
         Serial.println("connection lost, reconnect...");
@@ -106,18 +112,36 @@ void loop()
         }
         else timer += 100;
     }
+
+    if(millis() - lastSend > 2000)
+    {
+        StatusSend(lock_status);
+        lock_status= !lock_status;
+        lastSend=millis();
+      }
+
+    
     delay(100);
 }
 
-void Send () {if(millis() - lastsend > 2000){        // setup a 2-second period
-    bool lock_status = 0;       
-    lastsend = millis();
-          
+void StatusSend (bool lock_status) {           
     Serial.print("Lock Status: "); Serial.print(lock_status); ;
- 
       String datastring = (String)lock_status;
       Serial.print("Sending --> ");
       Serial.println(datastring);
-      microgear.publish(DHTDATATOPIC,datastring);             }
-    }  
-}
+      microgear.publish(DATATOPIC,datastring);             
+      }
+
+void updateLED(int state) {
+    // LED on NodeMCU is on when LEDPIN=LOW
+    if(state==1 && currentLEDState == 0){
+        currentLEDState = 1;
+        digitalWrite(LEDPIN, LOW);    //LED ON
+    }
+    else if (state==0 && currentLEDState == 1) {
+        currentLEDState = 0;
+        digitalWrite(LEDPIN, HIGH);  //LED OFF
+    }
+    microgear.publish(BUTTONTOPIC, currentLEDState);
+
+}   
