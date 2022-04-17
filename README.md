@@ -30,17 +30,15 @@ The main hardware components used in project are
 
 - MCU: ESP32 
  
-- Location (GPS): GPS Module NEO 6M 
+- Location (GPS): GPS Module URANUS-622f
  
-- Connectivity: ESP32 built-in Wi-Fi & GSM Module SIM800L
+- Connectivity: ESP32 built-in Wi-Fi & GSM Module
  
-- Display: 16*2 LCD
+- Display: 16*2 LCD with I2C interface
 
 - Keypad: Hex Keypad 
  
 - Electric Lock: Servo Motor 
- 
-- Weight: weight Sensor
  
 ## Software Flow: ##
 
@@ -110,7 +108,7 @@ While the software flow at the receiver side is as follow:
 
 - Get familiar with the basics of Iot
 
-- IoT labs Implementation
+- IoT labs Implementation (NETPIE).
 
 - Tried GPS connection with ESP32 
 
@@ -144,4 +142,24 @@ While the software flow at the receiver side is as follow:
 
 **Problems**
 
-- The value gained through GPS module have the tolerance of 100 ans we though of using capacitor to reduce noise
+- The GPS does not connect with satellite during indoor testing, once got connected but gave inaccurate location information.
+
+### Week 5 ###
+
+**Tasks**
+-NETPIE freeboard password keypad implementation to allow user enter password and unlock from app.
+-Combined NETPIE, lock & keypad into main working code.
+-GPS test at various locations.
+**Problems**
+No connection of GPS to sattelite despite test at following location: close indoor location, open location outside apartment, Indoor location at TGGS Communication lab, Outdoor location at TGGS.
+
+### Week 6 ###
+
+**Tasks**
+-LCD (2*16) display implementation using I2C interface with ESP32.
+-Integration of LCD with main working code to display status and password information.
+-Further testing of GPS.
+**GPS test Results **
+At open location achived connection after 30-45 mins , connection reminded stable afterwards even in indoor location and gave accurate location value.
+**Problems**
+GPS takes too long to connect for the first time while fixing to a satellite outdoor in open sky and doesnot connect at all at indoor location.
