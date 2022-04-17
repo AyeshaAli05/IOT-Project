@@ -2,7 +2,11 @@
 #include "WiFi.h"
 #include <ESP32Servo.h>
 #include <Keypad.h>
+#include <LiquidCrystal_I2C.h>
 
+// set the LCD number of columns and rows
+int lcdColumns = 16;
+int lcdRows = 2;
 const int ROW_NUM = 4; //four rows
 const int COLUMN_NUM = 4; //three columns
 char keys[ROW_NUM][COLUMN_NUM] = {
@@ -31,7 +35,8 @@ const String password_2 = "5642"; // change your password here
 const String password_3 = "4545"; // change your password here
 
 Servo myservo;  // create servo object to control a servo
-// 16 servo objects can be created on the ESP32
+
+LiquidCrystal_I2C lcd(0x27, lcdColumns, lcdRows);  
  
 int pos = 0;    // variable to store the servo position
 // Recommended PWM GPIO pins on the ESP32 include 2,4,12-19,21-23,25-27,32-33 
@@ -43,6 +48,7 @@ int servoPin = 15;
   int lastSend = 0;
 bool lock_status = 0;
   int currentLEDState = 1;
+  int key_count=0;
 
 
 /* If a new message arrives, do this */
@@ -137,7 +143,16 @@ void setup(void)
 
     /* Call onConnected() when NETPIE connection is established */
     microgear.on(CONNECTED,onConnected);
-
+    // initialize LCD
+   lcd.init();
+   // turn on LCD backlight                      
+   lcd.backlight();
+     lcd.setCursor(0, 0);
+  // print message
+  lcd.print("SMART DILIVERY");
+  lcd.setCursor(0,1);
+  lcd.print("BOX");
+  
     Serial.println("Starting..."); 
       // Connect to WiFi
     if (WiFi.begin(ssid, password)) {
@@ -148,6 +163,9 @@ void setup(void)
     }
 
     Serial.println("WiFi connected");  
+    lcd.clear();
+   lcd.setCursor(0, 0);
+  lcd.print("WiFi Connected");
     Serial.println("IP address: ");
     Serial.println(WiFi.localIP());
 
@@ -155,42 +173,67 @@ void setup(void)
     microgear.init(KEY,SECRET,ALIAS);
 
     /* connect to NETPIE to a specific APPID */
-    microgear.connect(APPID);     
+    microgear.connect(APPID);  
+    delay(2000);
+    lcd.clear();
+  lcd.print("Enter Password");
+
+       
 }
 
 void loop() 
 {
 
-
 char key = keypad.getKey();
 if (key)
 {
+   lcd.setCursor(key_count, 1);  
+  lcd.print(key);
+  key_count=key_count+1;
 Serial.println(key);
 if(key == '*') 
 {
 input_password = ""; // reset the input password
 Serial.println("Clearing Passowrd");
+  lcd.clear();
+  lcd.setCursor(0,0);
+  lcd.print("CLEARING PASSWORD");
+  key_count=0;
 }
 else if(key == 'D') 
 {
 Serial.println("Locking");
+lcd.clear();
+  lcd.setCursor(0,0);
+  lcd.print("LOCKING");
    myservo.write(0);
    lock_status = 0;
+   key_count=0;
   
 }
 else if(key == '#') 
 {
 if(input_password == password_1 || input_password == password_2 || input_password == password_3) {
 Serial.println("password is correct");
+lcd.clear();
+  lcd.setCursor(0,0);
+  lcd.print("Correct Password");
 Serial.println(input_password);
 Serial.println("Unlocking");
     myservo.write(180);
     lock_status = 1;
+      lcd.setCursor(0,1);
+  lcd.print("UNLOCKED");
+  key_count=0;
 } 
 else 
 {
 Serial.println("password is incorrect");
 Serial.println(input_password);
+lcd.clear();
+  lcd.setCursor(0,0);
+  lcd.print("INCORRECT PASSWORD");
+  key_count=0;
 }
 input_password = ""; // reset the input password
 } 
