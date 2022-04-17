@@ -130,7 +130,7 @@ While the software flow at the receiver side is as follow:
 
 **Problems**
 
-- Tried GPS connectio with mega as it provides more current limit than ESP32 but we were unsuccessfull in its connection too and we figure out to use voltage    regulator with GPS module 
+- Tried GPS connection with mega as it provides more current limit than ESP32 but we were unsuccessfull in its connection too and we figure out to use voltage    regulator with GPS module 
 
 ### Week 4 ###
 
@@ -147,19 +147,29 @@ While the software flow at the receiver side is as follow:
 ### Week 5 ###
 
 **Tasks**
+
 -NETPIE freeboard password keypad implementation to allow user enter password and unlock from app.
+
 -Combined NETPIE, lock & keypad into main working code.
+
 -GPS test at various locations.
+
 **Problems**
+
 No connection of GPS to sattelite despite test at following location: close indoor location, open location outside apartment, Indoor location at TGGS Communication lab, Outdoor location at TGGS.
 
 ### Week 6 ###
 
 **Tasks**
+
 -LCD (2*16) display implementation using I2C interface with ESP32.
 -Integration of LCD with main working code to display status and password information.
 -Further testing of GPS.
+
 **GPS test Results **
+
 At open location achived connection after 30-45 mins , connection reminded stable afterwards even in indoor location and gave accurate location value.
+
 **Problems**
+
 GPS takes too long to connect for the first time while fixing to a satellite outdoor in open sky and doesnot connect at all at indoor location.
