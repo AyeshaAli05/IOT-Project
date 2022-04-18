@@ -172,6 +172,11 @@ No connection of GPS to sattelite despite test at following location: close indo
 
 At open location achived connection after 30-45 mins , connection reminded stable afterwards even in indoor location and gave accurate location value.
 
+![GPS outdoor result](https://user-images.githubusercontent.com/76215573/163768160-01cd6973-f1dd-435f-98e0-1a4699bbaa72.jpeg)
+
+![Decoding GPS results](https://user-images.githubusercontent.com/76215573/163768177-74cf7807-4b00-4cb6-9c38-d17b2dd1b627.jpeg)
+
+
 **Problems**
 
 GPS takes too long to connect for the first time while fixing to a satellite outdoor in open sky and doesnot connect at all at indoor location.
