@@ -163,10 +163,12 @@ No connection of GPS to sattelite despite test at following location: close indo
 **Tasks**
 
 -LCD (2*16) display implementation using I2C interface with ESP32.
+
 -Integration of LCD with main working code to display status and password information.
+
 -Further testing of GPS.
 
-**GPS test Results **
+**GPS test Results**
 
 At open location achived connection after 30-45 mins , connection reminded stable afterwards even in indoor location and gave accurate location value.
 
