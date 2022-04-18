@@ -148,11 +148,11 @@ While the software flow at the receiver side is as follow:
 
 **Tasks**
 
--NETPIE freeboard password keypad implementation to allow user enter password and unlock from app.
+- NETPIE freeboard password keypad implementation to allow user enter password and unlock from app.
 
--Combined NETPIE, lock & keypad into main working code.
+- Combined NETPIE, lock & keypad into main working code.
 
--GPS test at various locations.
+- GPS test at various locations.
 
 **Problems**
 
@@ -162,11 +162,11 @@ No connection of GPS to sattelite despite test at following location: close indo
 
 **Tasks**
 
--LCD (2*16) display implementation using I2C interface with ESP32.
+- LCD (2*16) display implementation using I2C interface with ESP32.
 
--Integration of LCD with main working code to display status and password information.
+- Integration of LCD with main working code to display status and password information.
 
--Further testing of GPS.
+- Further testing of GPS.
 
 **GPS test Results**
 
