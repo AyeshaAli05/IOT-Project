@@ -180,6 +180,7 @@ At open location achived connection after 30-45 mins , connection reminded stabl
 
 ![Decoding GPS results](https://user-images.githubusercontent.com/76215573/163768177-74cf7807-4b00-4cb6-9c38-d17b2dd1b627.jpeg)
 
+https://user-images.githubusercontent.com/76215573/163769068-5f1ec6f4-67a3-41c4-8581-b4177378d859.mp4
 
 **Problems**
 
