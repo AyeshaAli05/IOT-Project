@@ -138,6 +138,8 @@ While the software flow at the receiver side is as follow:
 
 - NETPIE connection with ESP32
 
+https://user-images.githubusercontent.com/76215573/163768942-ba6c38dc-5b83-407d-b274-d37ba720548b.mp4
+
 - Tried GPS connection with ESP32 along with voltage regulator 
 
 **Problems**
@@ -151,6 +153,8 @@ While the software flow at the receiver side is as follow:
 - NETPIE freeboard password keypad implementation to allow user enter password and unlock from app.
 
 - Combined NETPIE, lock & keypad into main working code.
+
+https://user-images.githubusercontent.com/76215573/163768877-c5285add-f9ca-4810-9380-58fe8f84fa57.mp4
 
 - GPS test at various locations.
 
