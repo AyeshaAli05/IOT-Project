@@ -1,5 +1,87 @@
-this week we have tried following things:
-We tried NETPIE connection with arduino
-GPS connection with omega.... its limit is more than ESP86 but not successfull in connection yet
-Basic servo control for lock system
-Keypad Password Implementation done
+## Weekly Progress ##
+
+### Week 1 ###
+
+**Tasks**
+
+- Configuration and Testing of ESP82
+
+- Configuration and Testing of 16*2 LCD display
+
+- Configuration and Testing of Hex Keypad
+
+**Problems**
+
+- No big issue was faced
+
+### Week 2 ###
+
+**Tasks**
+
+- Get familiar with the basics of Iot
+
+- IoT labs Implementation (NETPIE).
+
+- Tried GPS connection with ESP32 
+
+**Problems**
+
+- We were not able to connect GPS module with ESP32 due to less current limit of ESP32 than what was required for for operation of GPS module
+
+### Week 3 ###
+
+**Tasks**
+
+- NETPIE Connection with arduino
+
+- GPS connection with mega (not succesfull)
+
+- Basic Servo control for lock System
+
+- Keypad Password Implementation
+
+**Problems**
+
+- Tried GPS connection with mega as it provides more current limit than ESP32 but we were unsuccessfull in its connection too and we figure out to use voltage    regulator with GPS module 
+
+### Week 4 ###
+
+**Tasks**
+
+- NETPIE connection with ESP32
+
+- Tried GPS connection with ESP32 along with voltage regulator 
+
+**Problems**
+
+- The GPS does not connect with satellite during indoor testing, once got connected but gave inaccurate location information.
+
+### Week 5 ###
+
+**Tasks**
+
+-NETPIE freeboard password keypad implementation to allow user enter password and unlock from app.
+
+-Combined NETPIE, lock & keypad into main working code.
+
+-GPS test at various locations.
+
+**Problems**
+
+No connection of GPS to sattelite despite test at following location: close indoor location, open location outside apartment, Indoor location at TGGS Communication lab, Outdoor location at TGGS.
+
+### Week 6 ###
+
+**Tasks**
+
+-LCD (2*16) display implementation using I2C interface with ESP32.
+-Integration of LCD with main working code to display status and password information.
+-Further testing of GPS.
+
+**GPS test Results **
+
+At open location achived connection after 30-45 mins , connection reminded stable afterwards even in indoor location and gave accurate location value.
+
+**Problems**
+
+GPS takes too long to connect for the first time while fixing to a satellite outdoor in open sky and doesnot connect at all at indoor location.
