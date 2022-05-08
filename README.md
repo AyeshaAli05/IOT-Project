@@ -185,3 +185,37 @@ https://user-images.githubusercontent.com/76215573/163769068-5f1ec6f4-67a3-41c4-
 **Problems**
 
 GPS takes too long to connect for the first time while fixing to a satellite outdoor in open sky and doesnot connect at all at indoor location.
+
+### Week 7 ###
+
+**Tasks**
+
+- Defining max no of password attempts from user side.
+
+- Implementation of device disable after max attempts from the user side and then i t can be enabled enable from app controlled by master'
+
+- Updating Location information to Netpie from aurduino
+
+- GPS (Neo 6m) testing again
+
+- Physical full project compilation into a delivery box prototyoe
+
+
+https://user-images.githubusercontent.com/76215573/167306455-03b56a86-1481-4c9d-a78d-1756abc21cf9.mp4
+
+
+- GPS testing at TGGS with supervisor and presenting the already done tasts
+
+- App notifications implementation (Device disable etc)
+
+**Problems**
+
+GPS takes too long to connect for the first time while fixing to a satellite outdoor in open sky and doesnot operate in some areas at all
+
+### Week 8 ###
+
+**Tasks**
+
+- Pseudo location table & update from it to Netpie to test GPS is working properly
+
+- Presentation preparation & updating evaluation table
