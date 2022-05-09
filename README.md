@@ -6,11 +6,12 @@ Smart Letter box is a parcel box by some parcel company to ship parcels of users
 
 The Conceptual Design of the project is shown in the figure below:
 
-![image](https://user-images.githubusercontent.com/100766772/158037560-96014433-83dc-48c6-b398-9446f60d45cd.png)
+![WhatsApp Image 2022-05-09 at 6 15 19 AM](https://user-images.githubusercontent.com/76215573/167352809-2da88743-fd36-4011-995c-3b386248f260.jpeg)
 
 The conceptual design based on the available components is as follow:
 
-![image](https://user-images.githubusercontent.com/100766772/158037634-5eda56de-da57-4891-90a1-5c8977086eca.png)
+![WhatsApp Image 2022-05-09 at 6 09 53 AM](https://user-images.githubusercontent.com/76215573/167360893-eb465cb9-099a-4927-933c-98a891184217.jpeg)
+
 
 ## Features: ##
 
