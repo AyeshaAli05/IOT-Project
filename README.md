@@ -45,21 +45,21 @@ The main hardware components used in project are
 
 The software flow of the Project is shown following:
 
-**old one**
+**Old one**
 
 ![image](https://user-images.githubusercontent.com/100766772/158037506-70935154-fb8e-4f35-b959-eacff436c228.png)
 
-**updated one**
+**Updated one**
 
 ![Masters side flow chart](https://user-images.githubusercontent.com/76215573/167362010-c9fcb298-6f40-4b1b-9479-3e1ffe963c49.JPG)
 
 While the software flow at the user side is as follow:
 
-**old one**
+**Old one**
 
 ![image](https://user-images.githubusercontent.com/100766772/158037520-d6427623-2e90-489e-9fc5-155297fd33e1.png)
 
-**updated one**
+**Updated one**
 
 ![user side flow chart](https://user-images.githubusercontent.com/76215573/167361935-f480fd7a-83a0-4d06-83a8-6ac96b847b5b.JPG)
 
